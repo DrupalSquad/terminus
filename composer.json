@@ -4,19 +4,19 @@
   "keywords": [ "cli", "pantheon", "terminus", "drupal", "wordpress" ],
   "homepage": "https://pantheon.io",
   "license": "MIT",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": ">=5.5.38",
+    "php": ">=7.1.3",
     "composer/semver": "^1.4",
     "consolidation/output-formatters": "^3.2",
     "consolidation/robo": "^1.4.4",
     "guzzlehttp/guzzle": "^6.2",
-    "psy/psysh": "^0.8",
-    "symfony/console": "^3.3",
-    "symfony/finder": "~2.7|^3.2",
-    "symfony/process": "~2.7|^3.2",
-    "symfony/yaml": "~2.1|^3.2"
+    "psy/psysh": "^0.9",
+    "symfony/console": "4.1.*",
+    "symfony/finder": "4.1.*",
+    "symfony/process": "4.1.*",
+    "symfony/yaml": "4.1.*"
   },
   "autoload": {
     "psr-4": {
@@ -54,12 +54,12 @@
       "test": "set -ex ; composer cs ; composer phpunit ; composer behat ; composer functional"
   },
   "require-dev": {
-    "behat/behat": "^3.2.2",
-    "php-vcr/php-vcr": "^1.4",
-    "phpunit/phpunit": "^4.8.36",
-    "php-coveralls/php-coveralls": "^2.1",
-    "sebastian/phpcpd": "^2.0",
-    "squizlabs/php_codesniffer": "^2.7"
+    "behat/behat": "*",
+    "php-vcr/php-vcr": "*",
+    "phpunit/phpunit": "*",
+    "php-coveralls/php-coveralls": "*",
+    "sebastian/phpcpd": "*",
+    "squizlabs/php_codesniffer": "*"
   },
   "config": {
     "process-timeout": 3600,
@@ -67,7 +67,7 @@
     "preferred-install": "dist",
     "sort-packages": true,
     "platform": {
-      "php": "5.5.38"
+      "php": "7.1.3"
     }
   },
   "extra": {
